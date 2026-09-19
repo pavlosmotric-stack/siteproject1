@@ -1,0 +1,33 @@
+body{
+background-color: #008984;
+}
+.mypc{
+height: 64px;
+width: 64px;
+position: absolute;
+top: 10px;
+left: 20px;
+}
+.mypctext{
+font: MS Sans Serif;
+color: #ffffff;
+position: absolute;
+top: 70px;
+background-color: #008984;
+width: 95px;
+}
+.net{
+top: 100px;
+left: 20px;
+Position: absolute;
+height: 64px;
+width: 64px;
+}
+.nettext{
+font: MS Sans Serif;
+color: #ffffff;
+position: absolute;
+top: 165px;
+background-color: #008984;
+width: 130px;
+}
