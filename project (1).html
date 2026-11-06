@@ -1,0 +1,58 @@
+<html>
+<head>
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+<a href="https://simple.wikipedia.org/wiki/This_PC" target="_blank"><img  class="mypc" src="mypc.png"></a>
+<input type="text" class="mypctext" value="Мій комп'ютер">
+<a href="https://en.wikipedia.org/wiki/My_Network_Places" target="_blank"><img class="net" src="net.png"></a>
+<input type="textarea" class="nettext" value="Мережеве оточення">
+<a href="https://en.wikipedia.org/wiki/Trash_(computing)" target="_blank"><img class="RecBin" src="Bin_Empty95.webp"></a>
+<input type="text" class="RecBinText" Value="Кошик">
+<a href="https://en.wikipedia.org/wiki/Windows_Messaging" target="_blank"><img class="inbox "src="Inbox.webp"></a>
+<Input type="text" class="inboxtext" value="Вхідні">
+<a href="https://en.wikipedia.org/wiki/Windows_File_Manager" target="_blank"><img class="folder"src="folder.png"></a>
+<Input type="text" class="FolderText" value="Папка">
+<div class="taskbar">
+<a href="https://en.wikipedia.org/wiki/Windows_95" target="_blank"> <button class="start-button">
+<span>🪟<span> Пуск
+</button></a>
+<div class="taskbar-clock" id="clock">12:00 PM</div>
+
+<style>
+  .taskbar-clock {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 9999;
+    display: inline-block;
+    padding: 2px 8px;
+    font-family: "Tahoma", "MS Sans Serif", sans-serif;
+    font-size: 11px;
+    color: #000;
+    background-color: #c0c0c0;
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: inset 1px 1px 0 #000000;
+  }
+</style>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    document.getElementById('clock').textContent = `${hours}:${minutes} ${ampm}`;
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+</script>
+</script>
+
+</body>
+</html>
