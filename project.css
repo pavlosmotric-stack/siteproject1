@@ -178,10 +178,20 @@ display: flex;
 align-items: center;
 margin-left: 4px;
 }
-.Messaging-divider{
-align-items: center;
-align-content: center;
-height: 800px;
-width: 800px;
-color: #d7e0de;
-}
+  .taskbar-clock {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 9999;
+    display: inline-block;
+    padding: 2px 8px;
+    font-family: "Tahoma", "MS Sans Serif", sans-serif;
+    font-size: 11px;
+    color: #000;
+    background-color: #c0c0c0;
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: inset 1px 1px 0 #000000;
+  }
